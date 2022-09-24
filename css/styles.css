@@ -1,0 +1,483 @@
+/* колір основного текста  #212121  */
+/* вторичний колір #757575 */
+/* билий колір основного текста #FFFFFF */
+/* акцент колір кнопкі #2196F3 */
+/* прозорий білий rgba(255, 255, 255, 0.6) */
+
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --acent-color: #2196f3;
+  --white-text-color: #ffffff;
+  --transparent-white-color: rgba(255, 255, 255, 0.6);
+  --black-text-color: #000000;
+  --hero-color: #2f303a;
+  --color-section-command: #f5f4fa;
+  --border-header: #ececec;
+  --border-color-portfolio: #f5f4fa;
+  --card-sad-gap: 30px;
+}
+/* html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+} */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--white-text-color);
+  color: var(--primary-text-color);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  /* outline: 2px solid tomato; */
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/*----------------------HEADER-------------------------------------*/
+
+.header {
+  border-bottom: 1px solid var(--border-header);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-text {
+  margin: 24px 93px 24px 0;
+}
+
+.header-box {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+
+.header-text {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  color: var(--black-text-color);
+}
+
+.text-link {
+  color: var(--acent-color);
+}
+
+.item-link {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+}
+
+.item-link:hover,
+.item-link:focus {
+  color: var(--acent-color);
+}
+
+.header-contact {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+.header-items {
+  margin-right: auto;
+}
+
+.header-link {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--acent-color);
+}
+
+.list-link {
+  font-style: normal;
+  font-weight: 500;
+
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.list-link:hover,
+.list-link:focus {
+  color: var(--acent-color);
+}
+
+.link-item {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.link-item:hover,
+.link-item:focus {
+  color: var(--acent-color);
+}
+
+/* ------------Main hero ------------------*/
+.main {
+}
+.hero {
+  background-color: var(--hero-color);
+}
+
+.main-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  margin-bottom: 30px;
+
+  max-width: 696px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--white-text-color);
+}
+
+.main-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
+  padding: 10px 32px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  min-width: 216px;
+
+  cursor: pointer;
+  color: var(--white-text-color);
+  background: var(--acent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.main-btn:hover,
+.main-btn:focus {
+  color: var(--acent-color);
+  background-color: var(--white-text-color);
+}
+
+/* -------------Section Перевагт------------- */
+
+.container-item {
+  display: flex;
+  margin-top: 94px;
+}
+
+.item-lists:not(:last-child) {
+  margin-right: 30px;
+}
+
+.container-subtitle {
+  padding-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
+
+.container-text {
+  padding-bottom: 118px;
+
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+/* ---------Section Чим займаємось------------ */
+
+.box-title {
+  text-align: center;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+.box-item {
+  display: flex;
+  justify-content: space-between;
+}
+.section-images:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* ----------------------Section Команда ---------------------------*/
+
+.command {
+  background-color: var(--color-section-command);
+}
+
+.list-title {
+  text-align: center;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+.command-list:not(:last-child) {
+  padding-right: 30px;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-subtitle {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.list-text {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+
+  font-size: 16px;
+  line-height: 1.18;
+
+  color: var(--title-text-color);
+}
+
+/* ------------------------------FOOTER---------------------------------- */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: var(--hero-color);
+}
+
+.footer-link {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  color: var(--white-text-color);
+}
+
+.text-list {
+  color: var(--acent-color);
+}
+
+.page-box {
+  margin-top: 20px;
+}
+
+.box-list:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.box-link {
+  font-style: normal;
+  line-height: 1.71;
+
+  color: var(--white-text-color);
+}
+
+.link-mail,
+.link-tel {
+  font-style: normal;
+  line-height: 1.71;
+
+  color: var(--transparent-white-color);
+}
+
+.link-mail:hover,
+.link-mail:focus {
+  color: var(--acent-color);
+}
+
+.link-tel:hover,
+.link-tel:focus {
+  color: var(--acent-color);
+}
+
+/* ------------------------------P O R T F O L I O ------------------*/
+
+/* ------------------------------header---------------------------- */
+
+/* ------------------------Main --------------------------------------------*/
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 34px;
+}
+
+.content-link {
+  padding: 6px 24px 6px 24px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  max-height: 38px;
+
+  background: var(--border-color-portfolio);
+  border: transparent;
+  border-radius: 4px;
+  color: var(--primary-text-color);
+}
+
+.content-link:hover,
+.content-link:focus {
+  color: var(--white-text-color);
+  background-color: var(--acent-color);
+}
+
+.current {
+  color: var(--acent-color);
+}
+
+/* -------------Section Перелік-------------------- */
+
+.list-inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-sad-gap));
+  margin-bottom: calc(-1 * var(--card-sad-gap));
+
+  /* gap: 30px; */
+}
+.list-inner > .portfolio-box {
+  background-color: #2196f3;
+  outline: 1px solid tomato;
+  margin-left: var(--card-sad-gap);
+  margin-bottom: var(--card-sad-gap);
+  flex-basis: calc(100% / 3 - var(--card-sad-gap));
+}
+
+.inner-title {
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+
+.inner-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.discription-list {
+  border: 1px solid var(--border-color-portfolio);
+  padding: 20px 24px;
+  border-top: 0;
+}
+@use postcss-nested;
+
+body {
+  height: 100%;
+  background: src () center center no-repeat;
+  background-size: cover;
+}
